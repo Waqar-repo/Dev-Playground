@@ -1,0 +1,88 @@
+/* write dot and select the class to do css
+such as .html this mean it will access the class name HTML
+ and will do some css operation*/
+ /* class selector */
+.html {
+  color:#e54c21 ;
+}
+.css {
+  color:#264EE4;
+}
+.javascript {
+  color: #E4A125;
+}
+.react {
+  color: #58C4DC;
+}
+.tailwind {
+  color:#00BCFF;
+}
+
+/* write hash select the id to do css
+such as #html this mean it will access the class name HTML
+ and will do some css operation*/
+ /* ID selector */
+
+ #html{
+    color: #e54c21;
+
+ }
+ #css{
+    color: #264EE4;
+
+ }
+ #js{
+
+    color: #E4A125;
+ }
+ #tail{
+
+    color: #00BCFF;
+ }
+ #react{
+
+    color: #58C4DC;
+ }
+.clss{
+    color: #e54c21;
+    font-family: sans-serif;
+    text-decoration: overline;
+    font-size:18px;
+}
+
+#ID{
+    color: cadetblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+}
+
+/* <!-- waqar is a custom attribute and now i will
+     access this in css file using [waqar]  -->
+     attribute selector
+      */
+[waqar]{
+    color: blueviolet;
+    background-color: cadetblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* combinator selector you can combine two element and then select */
+/*mean p tag in ul tag will have this change 
+this also called Descendant Combinator*/
+ul p{
+    background-color: chartreuse;
+}
+.web{
+    background-color: darkred;
+}
+.ID{
+    background-color: #e54c21;
+}
+
+/* sudo selector hover*/
+.h1:hover{
+    color: #264EE4;
+}
+[waqar]:hover{
+    color: red;
+}
