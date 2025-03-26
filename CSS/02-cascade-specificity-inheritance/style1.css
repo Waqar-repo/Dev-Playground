@@ -1,0 +1,29 @@
+body{
+    background-color: yellowgreen;
+}
+ul{
+    font-size: 32px;
+    font-weight: 900;
+    font-family: cursive;
+    font-style: italic;
+}
+/* to inherent font family from it patent in this case ul is parent */
+ul button{
+    position: unset;
+    font-family: inherit;
+font-size: 16px;
+padding-top: 2%;
+padding-bottom: 2%;
+padding-left: 1%;
+padding-right: 1%;
+padding-inline-end: 2%;
+padding-inline-start: 2%;
+}
+div li{
+    font-weight: 200;
+    font-family: sans-serif;
+    background-color: red;
+}
+div li:hover{
+    background-color: aqua;
+}
