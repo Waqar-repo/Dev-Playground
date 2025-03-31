@@ -1,0 +1,32 @@
+/*cascade mean when we write code top to bottom, 
+it increases it importance. but when you specify a class, id etc
+ it will alwasy apply becasue it has high specificity.
+ specificity override cascade rules  */
+
+/* id has more specificity than class */
+ 
+ 
+ 
+
+/* #html{
+  background-color:yellowgreen;
+}
+
+.html{
+  background-color: aqua;
+}
+li {
+  color: blue;
+  background-color: green;
+}
+li {
+  background-color: orangered;
+}
+li {
+  background-color: cornflowerblue;
+  color: brown;
+}
+
+.html{
+  background-color:indigo ;
+} */
