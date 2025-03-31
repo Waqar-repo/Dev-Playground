@@ -1,0 +1,70 @@
+.nav button{
+    text-align: center;
+    background-color:  #3F3F3Cent;
+    color: red;
+
+
+}
+.nav{
+    text-align: center;
+    font-family: sans-serif;
+}
+.nav button:hover{
+    background-color: #357DDD;
+    color: black;
+}
+.textbox
+{
+    text-align: center;
+    height:75px;
+    width: 300px;
+    font-size:12pt;
+    text-align: left;
+}
+html{
+    background-color:aqua;
+}
+.contact{
+    text-align: center;
+
+}
+.h2{
+    color: rgb(26, 81, 200);
+}
+.p1{
+    color: blue;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+.p2{
+    color: #357DDD;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 900;
+    font-style: oblique;
+    
+}
+
+ol {
+    color:blueviolet ;
+}
+ol:hover{
+    color: #357DDD;
+}
+.js{
+    color: orange;
+}
+.css{
+    color: #357DDD;
+}
+.react{
+    color: dodgerblue;
+}
+.html{
+    color: yellow;
+}
+ul b:hover{
+    color: #357DDD;
+
+}
