@@ -1,0 +1,36 @@
+.parent{
+    max-width: 500px;
+    height: 400px;
+    background-color: brown;
+
+}
+
+.one {
+  background-color: aquamarine;
+  /* max width is better on mobile or tablet. if we set width 
+   browser will show horizontal bar if we decrease the width of browser
+   width and hight can cause over flow.
+    use min-hight and max-width most of time and depending on scenario*/
+  width: 50%;
+  height: 50%;
+ 
+}
+.one-child {
+    max-width: 50%;
+    height: 50%;
+    background-color: blue;
+    
+}
+.two {
+  /* you can also set width with percentage. you can also use word-break break all
+    to tackle with over flow but it will cut the words 
+    which will over flow and look weird */
+  background-color: blueviolet;
+  width: 50%;
+  max-width: 500px;
+
+}
+
+/* if you give width in percentage then whether you give width to parent or not
+it will always adjust it width
+but hight value on child only works when you give it parents hight in px only*/ 
