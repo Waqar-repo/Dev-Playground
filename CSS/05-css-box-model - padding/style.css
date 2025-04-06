@@ -1,0 +1,53 @@
+
+/* * is a universal selector */
+*{
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+
+}
+
+.one {
+  /* by default boarder colour is same as text color */
+  background-color: aquamarine;
+  color: blue;
+  margin: 40px;
+  width: 300px;px ;
+padding: 25px;
+/* but we can override boarder colour by giving colour */
+border: 4px solid teal;
+
+
+/* boarder radious can make corner round  */
+border-radius: 16px;
+
+
+
+ /* box sizing-border box boarder and padding also include in  specified width 
+ if we do not specify then pedding and boarder would take more space than width*/
+box-sizing: border-box;
+margin: 40px;
+}
+.two {
+  height: 300px;
+  width: 300px;
+margin: 40px;
+background-image: linear-gradient(to right, rgba(58, 126, 137, 0.473), rgb(67, 84, 169));
+  width: 300px;px ;
+padding: 25px;
+border: 8px solid hotpink;
+border-radius:100% ;
+border-image-width: 260px;
+overflow: hidden;
+/* same as border but outside */
+outline: 5px dotted brown;
+}
+.two img{
+  width: 100%;
+  border-radius: 100px;
+  margin-top: -10px;
+  margin-left: 3px;
+
+}
