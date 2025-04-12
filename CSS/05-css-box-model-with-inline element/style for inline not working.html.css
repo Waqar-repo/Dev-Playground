@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+
+p{
+background-color: yellowgreen;
+width: 300px ;
+height: 100px;
+padding: 25px;
+box-sizing: border-box;
+border: 10px solid green;
+margin: 20px;
+padding-left: 20px;
+
+}
+/* inline does not have fix shape like box and width and hight does not apply */
+/* you can give padding and border to inline element
+ but It will not push the next element instead pedding might be merge to next element
+ box model property in inline element (padding,border and margin) apply left to right 
+ not top to bottom*/
+.html{
+    background-color: cadetblue;
+    width: 300px;
+    padding: 20px;
+    
+
+}   
