@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+    width:600px;
+}
+
+section{
+    background-color: blueviolet;
+    /* padding: 10%;
+    width: 400px;
+    font-size: 32px; */
+    width: 100vw;
+    box-sizing: border-box;
+ 
+}
+/* try not to give width or hight in px becaue this can cause scroll bar in view port
+you can give max-width or max-height*/
+.box{
+
+background-color:chartreuse;
+ width: 50vh; 
+ padding: 25vw;
+
+box-sizing: border-box;
+
+}
+
+
+
+
+
+/* if you give padding and margin in percentage then it will see its parent
+but if parents does not have padding then it will calculate the 
+percentage from the width of its parent 
+
+
+
+
+/* if you put width or height in percentage then it will see the width of it parent 
+and apply percentage according to its parents width and 
+height only works with px or if parent has height in pixel then
+you can give height to chaild in percentage*/
