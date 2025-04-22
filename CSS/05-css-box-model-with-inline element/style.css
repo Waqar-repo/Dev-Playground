@@ -3,8 +3,11 @@ body{
 }
 
 .inline{
+    margin: 20px;
     display: inline-block;
     background-color: coral;
+    box-sizing: border-box;
+    padding: 20px;
     
 }
 .html{
@@ -19,10 +22,34 @@ body{
     padding: 20px;
     border: 10px solid pink;
     margin: 20px;
-    
+    border-radius: 30%;
+    text-align: center;
+}
+img{
+    width: 400px;
+margin-top: 5px;
+box-sizing: border-box;
+background-color: bisque;
+margin: 20px;
+padding-right: 10px;
+border: 10px solid whitesmoke;
+border-radius: 25px;
 
-}   
+}
+
+
 iframe{
     width: 480px;
     height: 360px;
+}
+div.span{
+    box-sizing: border-box;
+    background-color: aquamarine;
+    max-width: 300px;
+    font-size: 34px;
+    padding: 10px;
+    margin: 52px;
+    padding-left: 35px;
+    border: 5px double darkblue;
+    border-radius: 50%;
 }
