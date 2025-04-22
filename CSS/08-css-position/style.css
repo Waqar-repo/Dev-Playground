@@ -1,0 +1,54 @@
+/*css position static and relative  */
+
+
+/* position relative can be used to position the element where you want */
+
+div{
+    position: relative;
+    top: 0px;
+    right: 0px;
+    background-color:chartreuse;
+}
+ul{
+    position: relative;
+    background-color: blue;
+    top: 50px;
+    height: 300px;
+    /* overflow: scroll; */
+    margin-top: 10px;
+}
+
+.css-element{
+    background-color: aquamarine;
+    /* if position absolte's parent has position other than statsic then
+    it would not go to viewpoprt for position allignment*/
+    position: absolute ;
+    top: 46px;
+    right: 5px;
+    left: 5px;
+    /* bottom: 5px; */
+ 
+    
+
+}
+/*  position fixed always connect to view port*/
+.js-element{
+    position: fixed;
+    background-color: orange;
+top: 10px;
+right: 10px;
+left: 10px;
+}
+
+.html-element{
+
+    /* for sticky position to work, parent should have height and scroll bar 
+     overflow: scroll; position stiky never over flow outisde of it parent
+     it check over flow scroll to its parent or grand parent
+      but if it does not find over flow scroll then it use viewport for reference */
+    position: sticky;
+    background-color: brown;
+    top: 25px;
+
+
+}

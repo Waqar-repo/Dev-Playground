@@ -1,0 +1,48 @@
+main{
+    position: relative;
+    height: 400px ;
+    width: 600px;
+    /* background-color:darkkhaki ; */
+}
+.box {
+  width: 300px;
+  height: 100px;
+  /* use alpha channel when just need to transparent the color */
+  background-color: rgb(0, 128, 0);
+  /* rotate, scale, translate commonly used*/
+  /*  transform:scale(1.5) will grow the element from centre or selected point*/
+/* transform:scale(5) ; */
+
+
+
+
+  /* to grow or selectthe element from specific point then use transform-origin */
+/* transform-origin: 0% 100%; */
+
+
+
+
+/* opacity is used to set the opacity of the element, transparent etc */
+/* opacity: .5; */
+
+
+
+/* rotate from the selected origin point */
+/* transform: rotate(45deg); */
+
+
+/* translate x or translate y  x horizontal and y in vertical
+similar to margin but it does not push other element / content */
+ /* transform: translateX(100%);
+ transform: translateY(100%); */
+
+/*commonly use to translate and make it to centre   */
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+box-shadow:10px 10px 4px rgb(0, 0, 0, 0.5);
+
+
+}
+/* transform would not push other element/content */

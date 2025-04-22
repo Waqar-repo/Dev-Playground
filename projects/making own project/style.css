@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+  
+  
+    
+}
+nav{
+ 
+   
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 12px;
+    position: sticky;
+    top: 0px;
+    
+
+    
+}
+
+nav a button{
+    background-color: #FFCFA0;
+    padding-top: 5px;
+    padding-right: 7px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    border-radius: 18px ;
+    border-top: 8px solid coral;
+    border-right: 9px solid coral;
+    border-bottom: 8px solid coral;
+    border-left: 9px solid coral;
+    border-width: 4px;
+
+
+}
+nav button:hover{
+    background-color: rgb(228, 125, 88);
+    color: whitesmoke;
+    border-top: 8px solid #ffffff;
+    border-right: 9px solid white;
+    border-bottom: 8px solid #AF2F00;
+    border-left: 9px solid white;
+    border-width: 4px;
+
+
+}
+.contact-form{
+    position: relative;
+    top: 40px;
+    left: 19px ;
+}
+
+.name{
+    text-align: left;
+    position: relative;
+    left: 57px;
+
+}
+.email{
+    text-align: left;
+    position: relative;
+    left: 57px;
+
+}
+.contact{
+    text-align: left;
+    position: relative;
+    left: 43px;
+
+}
+.contact-us{
+    position: relative;
+    top: 32px;
+    left: 120px;
+}
+.reset-form{
+    position: relative;
+    background-color:#FFCFA0;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom:3px;
+    padding-left: 7px;
+    border-radius: 10px;
+    left: 115px;
+}
+.submit-form{
+    position: relative;
+    background-color:#FFCFA0;
+    padding-top: 3px;
+    padding-right: 7px;
+    padding-bottom:3px;
+    padding-left: 7px;
+    border-radius: 10px;
+    left: 138px;
+}
+.reset-form:hover{
+    background-color: rgb(228, 125, 88);
+    color: whitesmoke;
+ }
+ .submit-form:hover{
+    background-color: rgb(228, 125, 88);
+    color: whitesmoke;
+    
+ }
