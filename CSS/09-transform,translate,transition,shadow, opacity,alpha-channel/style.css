@@ -2,13 +2,15 @@ main{
     position: relative;
     height: 400px ;
     width: 600px;
-    /* background-color:darkkhaki ; */
+    /* background-color:darkkhaki ;
+ */
 }
 .box {
+  
   width: 300px;
   height: 100px;
   /* use alpha channel when just need to transparent the color */
-  background-color: rgb(0, 128, 0);
+  background-color: rgb(242, 245, 242);
   /* rotate, scale, translate commonly used*/
   /*  transform:scale(1.5) will grow the element from centre or selected point*/
 /* transform:scale(5) ; */
@@ -40,9 +42,18 @@ similar to margin but it does not push other element / content */
 position: absolute;
 top: 50%;
 left: 50%;
+border-radius: 5px;
 transform: translate(-50%,-50%);
-box-shadow:10px 10px 4px rgb(0, 0, 0, 0.5);
+box-shadow: 0px 0px 4px 6px rgba(0, 0, 0, 0.35);
 
+
+
+}
+.box h1{
+  box-sizing: border-box;
+  margin-left: 62px;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.35);
+  font-family: sans-serif;
 
 }
 /* transform would not push other element/content */
