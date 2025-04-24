@@ -10,7 +10,7 @@ main{
   width: 300px;
   height: 100px;
   /* use alpha channel when just need to transparent the color */
-  background-color: rgb(242, 245, 242);
+  background-color: rgb(255, 255, 255);
   /* rotate, scale, translate commonly used*/
   /*  transform:scale(1.5) will grow the element from centre or selected point*/
 /* transform:scale(5) ; */
