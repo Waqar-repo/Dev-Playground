@@ -1,0 +1,90 @@
+body{
+    font-family: sans-serif;
+    background-color: #0D1A2D;
+    font-family: 'Outfit';
+    
+}
+.nft{
+    background-color:#15273F ;
+    height: 600px;
+width: 100%;
+max-width: 350px;
+
+position:absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50% ,-50%);
+border: 28px solid #15273F ;
+border-radius: 22px;
+}
+
+.mainimg{
+    width: 100%;
+    border-radius: 10px;
+}
+
+h1{
+    color: #EAF3FA;
+    font-size: 22px;
+}
+.p1{
+    color:#7D91AB ;
+    font-size: 18px;
+}
+.eth{
+    width: 12px;
+    position:relative;
+    top: 7px;
+
+}
+.p2{
+    color:#00FFF8 ;
+    margin-top: -16px;
+    margin-left: 20px;
+    font-size: 16px;
+}
+.clock{
+    width: 18px;
+    position:relative;
+    top: -34px;
+left:248px ;
+
+}
+.p3{
+    color: #4F6789;
+    position: absolute;
+    top: 470px;
+    left: 270px;
+}
+hr {
+    display: block;
+    margin-top: -0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 0.5px;
+    color: #23354D;
+}
+
+.avatar{
+    width: 34px;
+    position:relative;
+    top: 16px;
+left:0px ;
+border: 1px white solid;
+border-radius: 18px;
+
+}
+
+.p4{
+    
+    position: absolute;
+    top: 548px;
+    left: 53px;
+    color: #6E83A3;
+    
+}
+span{
+    color: white;
+}

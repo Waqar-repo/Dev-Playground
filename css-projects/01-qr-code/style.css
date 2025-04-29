@@ -1,0 +1,29 @@
+body{
+    min-height: 100vh;
+    background-color:#D5E1EF ;
+    font-family: 'Outfit';
+    text-align: center;
+}
+.card{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    height: 470px;
+    width: 100%;
+    max-width: 302px;
+    border-radius: 16px;
+    padding: 16px;
+    padding-bottom: 22px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 5px rgb(0, 0, 0,.3);
+
+}
+img {
+    width: 100%;
+    border-radius: 10px;
+
+}
+p{
+    color: #7B7F88;
+}
