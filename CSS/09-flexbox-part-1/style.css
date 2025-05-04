@@ -1,0 +1,55 @@
+body {
+  margin: 0;
+}
+*{
+  box-sizing: border-box;
+}
+.parent {
+  padding: 10px;
+  /* border: 4px solid indianred; */
+  /*  display flex make our element to flex box 
+    and make inline element to block*/
+  display: flex;
+  height: 50vh;
+  /* justify-content: center; */
+  /* justify-content:space-between; */
+  /* justify-content: space-around; */
+  justify-content:space-evenly ;
+  align-items:center ;
+  flex-direction: column;
+  background-color: aqua;
+}
+.parent span {
+  /* The flex-grow property specifies how much the item will grow 
+  relative to the rest of the flexible items inside the same container. */
+  /* flex-grow:1; */
+  /* border: 4px solid cadetblue; */
+  /* width: 200px;
+    height: 300px; */
+  background-color: cadetblue;
+  /* flex-shrink 0 means do not shrink this element */
+  /* flex-shrink: 0; */
+
+ 
+}
+.parent P {
+  /* width: 400px; */
+  /* flex-grow: 1; */
+  /* width: 400px; */
+
+  margin: 0;
+  background-color: darkkhaki;
+  /* border: 4px solid darkkhaki; */
+  /* max content will use one line to cover all text increase width*/
+  /* width: max-content; */
+  /* min content will use the biggest word and use that as a max width
+    basically use minimum width as possible */
+  /* width: min-content; */
+}
+.parent a {
+
+    /* flex-grow: 1.5; */
+  /* border: 4px solid yellowgreen; */
+  background-color: yellowgreen;
+  /* width: 400px; */
+}
