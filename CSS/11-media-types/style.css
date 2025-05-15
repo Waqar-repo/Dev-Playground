@@ -1,0 +1,20 @@
+.square{
+    background-color: black;
+    width: 300px;
+    height: 300px;
+border: 25px solid blue;
+}
+.h1{
+    display: none;
+}
+@media print{
+    .h1{
+        display: block;
+        font-size: 64px;
+    }
+    .square {
+        background-color: red;
+        border: 25px solid cadetblue;
+    }
+
+}
