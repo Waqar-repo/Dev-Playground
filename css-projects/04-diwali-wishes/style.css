@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #F99501;
 }
 .jhalar{
   width: 250px;
@@ -45,7 +46,101 @@ audio::-webkit-media-controls-play-button,
         font-family: "salsa" , cursive;
      }
 
-  
+     .circle{
+        height: 10px;
+        width: 10px;
+        background-color:#FBD8A4 ;
+        border-radius: 50%;
+        flex-shrink: 0;
+     }
+     .horizontal-line{
+        width: 468px;
+        height: 2px;
+        background-color: #FBD8A4;
+        border-radius: 5px;
+        
+     }
+     .horizontal-divider{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        max-width: 1010px;
+        margin-inline: auto;  
+     padding-top:19px;
+        padding-bottom: 40px;
+    
+    
+}
+     .lakshmi-genash{
+        background-color: #F99501;
+        padding-inline: 1rem;
+     }
+    .lakshmi-genas-img{
+        max-width: 1364.87px;
+        width: 100%;
+        display: block;
+        margin-inline: auto;
+        
+    }
+    .lakshmi-genash p{
+        font-family: 'Style Script', cursive;
+        font-size: 70px;
+        font-weight: 400px;
+        text-align: center;
+    }
+    .white-card{
+        max-width: 520px;
+        /* max-height: 439px; */
+    
+        background-color: white;
+        padding: 4rem;
+        border-radius: 20px;
+        font-size: 16px;
+        font-weight: 400px;
+    }
+    .white-card p{
+        font-size: 2rem;
+        font-family: "salsa" , cursive;
+        font-weight: 400px;
+    }
+    .white-card-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-shrink: 0;
+    }
+    .little-girl {
+         max-width: 260px;
+         margin-left: -100px;
+     
+        
+    }
+  .lakshmi-genash-card{
+
+max-width: 1377px;
+max-height: 711px;
+background-color: white;
+border-radius: 25px;
+display: flex;
+margin-inline: auto;
+padding-inline: 1rem;
+  }
+ 
+  .lakshmi-genash-card img{
+    width:50%;
+  }
+   .diwali{
+    font-family: "salsa" , cursive;
+    font-size: 24px;
+    font-weight: 400px;
+    margin-left: 35px;
+  }
+  .thanku{
+    font-family: 'Style Script', cursive;
+    font-size: 70px;
+    font-weight: 400px;
+    margin-left: 35px
+  }
   @media (max-width: 839px){
     .jhalar{
   width: 180px;
@@ -65,7 +160,7 @@ audio::-webkit-media-controls-play-button,
 } 
  
 .audio-container{
-     width: 284px;
+     max-width: 284px;
     height: 60.36px;
     padding-left: -10;
      }
@@ -80,4 +175,58 @@ max-height: 226px;
     .second-deepak{
         display: none;
     }
+
+.hero-section{
+    min-height: 400px;
+}
+
+ .white-card p{
+        font-size: 1.25rem;
+        
+    }
+    .little-girl{
+        max-width: 160px;
+        /* margin-left: -46px; */
+    }
+    .white-card{
+        padding-block: 1rem;
+        padding-left: 2rem;
+        padding-right: 4rem;
+    }
+}
+@media (max-width: 540px){
+    .lakshmi-genash p {
+        font-family: 'Style Script', cursive;
+        font-size: 32px;
+        font-weight: 400px;
+        text-align: center;
+    }
+    .hero-section p {
+font-size: 24px;
+    }
+.first-deepak {
+width: 100%;
+max-width: 280px;
+}
+.white-card p{
+        font-size: 1rem;
+        font-weight: 400px;
+        /* padding-block: 1rem;
+        padding-left: 2rem;
+        padding-right: 2rem; */
+    }
+    .diwali{
+    
+    font-size: 14px;
+    font-weight: 400px;
+   
+  }
+  .thanku{
+
+    font-size: 24px;
+    font-weight: 400px;
+
+        
+    }
+
 }
