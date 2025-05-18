@@ -80,6 +80,7 @@ audio::-webkit-media-controls-play-button,
         width: 100%;
         display: block;
         margin-inline: auto;
+        padding-inline: 1rem;
         
     }
     .lakshmi-genash p{
@@ -128,6 +129,7 @@ padding-inline: 1rem;
  
   .lakshmi-genash-card img{
     width:50%;
+
   }
    .diwali{
     font-family: "salsa" , cursive;
