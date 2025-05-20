@@ -1,0 +1,58 @@
+.container {
+    background-color: lightblue;
+    min-height: 60vh;
+    display: grid;
+    grid-template-columns:repeat(5,100px);
+    /* grid-template-rows: 100px 100px 100px ; */
+    grid-template-rows: repeat(3,100px);
+}
+.box{
+    
+    color: white;
+    font-size: 4rem;
+
+}
+.box-1 {
+  background-color: green;
+  /* grid-column-start: 5;
+  grid-row-start: 3; */
+  grid-column-end:6 ;
+  grid-row-end: 4;
+}
+
+.box-2 {
+  background-color: blueviolet;
+}
+
+.box-3 {
+  background-color: blue;
+}
+
+.box-4 {
+  background-color: brown;
+}
+
+.box-5 {
+  background-color: coral;
+ 
+}
+
+.box-6 {
+  background-color: darkblue;
+}
+
+.box-7 {
+  background-color: darkred;
+}
+
+.box-8 {
+  background-color: darkslategray;
+}
+
+.box-9 {
+  background-color: gray;
+}
+
+.box-10 {
+  background-color: navy;
+}
