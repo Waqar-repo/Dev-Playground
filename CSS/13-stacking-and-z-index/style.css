@@ -21,16 +21,33 @@ body {
 .red-box {
     background-color: red;
     position: relative;
+  
 }
 
 .green-box {
     background-color: green;
     margin-left: 2rem;
         position: relative;
+        
+
 }
 
 .blue-box {
     background-color: blue;
     margin-left: 3rem;
         position: relative;
+       
+}
+.container-one{
+    background-color: hotpink;
+    box-shadow: 0 5px 16px;
+    padding: 1rem;
+    position: relative;
+}
+.container-two{
+    background-color: cadetblue;
+    box-shadow: 0 5px 16px;
+    margin-left: 2rem;
+    position: relative;
+    
 }
