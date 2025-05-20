@@ -12,10 +12,13 @@
     color: white;
     font-size: 4rem;
     padding: 1rem;
+    float: left;
 }
 
 .box-1 {
     background-color: green;
+    /* float: left; */
+    /* position: absolute; */
 }
 
 .box-2 {
