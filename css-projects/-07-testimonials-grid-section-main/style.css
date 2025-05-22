@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    font-size:13px ;
+    margin: 0;
+    border-radius: 10px;
+}
+img{
+    border-radius: 100%;
+    max-width: 2.5rem;
+    position: relative;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-right:2px ;
+}
+h1{
+    font-family: "Barlow Semi Condensed", sans-serif;
+    
+    font-weight: 500;
+    font-size: 22px;
+    }
+.daniel{
+    background-color:#733FC8;
+    color: white;
+    border-radius: 8px;
+}
+.jonathan{
+    background-color: #49556B;
+    color: white;
+    border-radius: 8px;
+}
+.jeanette{
+    background-color: white;
+    color: #49556B;
+    border-radius: 8px;
+}
+.patric{
+    background-color: #191F2D;
+    color:#B4B8BE ;
+    border-radius: 8px;
+    
+}
+
+.container{
+    margin-inline: 2rem;
+    margin-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    padding-inline: 10px;
+    
+}
+.box{
+    margin-bottom: 20px;
+}
+@media (min-width: 375px) {
+    .container{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        
+        
+
+
+    }
+  
+}
