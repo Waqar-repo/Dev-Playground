@@ -10,11 +10,13 @@ body{
 }
 img{
     border-radius: 100%;
-    max-width: 2.5rem;
-    position: relative;
-    padding-left: 10px;
-    padding-top: 10px;
-    margin-right:2px ;
+    max-width: 2rem;
+    
+    float: left;
+    margin-top: 10px
+    
+    
+ 
 }
 h1{
     font-family: "Barlow Semi Condensed", sans-serif;
@@ -26,45 +28,80 @@ h1{
     background-color:#733FC8;
     color: white;
     border-radius: 8px;
+    grid-column-start: span 2;
+    
+
 }
 .jonathan{
     background-color: #49556B;
     color: white;
-    border-radius: 8px;
+     border-radius: 8px;
+    
 }
 .jeanette{
-    background-color: white;
-    color: #49556B;
     border-radius: 8px;
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+  
 }
 .patric{
     background-color: #191F2D;
     color:#B4B8BE ;
     border-radius: 8px;
+    grid-column-start: span 2;
     
+}
+.kira{
+      background-color: white;
+    color: #49556B;
+    border-radius: 8px;
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-column-end: 5;
+    grid-row-end:3;
+    max-height: 600px;
+    
+   
 }
 
 .container{
     margin-inline: 2rem;
     margin-block: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
+   
     padding-inline: 10px;
+    display: grid;
+    grid-template-columns:repeat(4, 1fr) ;
+    grid-template-rows: repeat(2, 1fr);
+    gap: 40px;
+   
+    max-width: 1175px;
+  
+    
     
 }
 .box{
     margin-bottom: 20px;
+    box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.20);
+    padding-inline: 30px;
+    padding-bottom: 15px;
+    max-height: 500px;
+    overflow: hidden;
+    
+    
+}
+.name-veri{
+    margin-top: 10px;
+    margin-left: 42px;
+
 }
 @media (min-width: 375px) {
-    .container{
+    .box{
+        display: block;
+        position: relative;
         
-        display: grid;
-        grid-template-columns: 1fr;
         
         
-
 
     }
   
