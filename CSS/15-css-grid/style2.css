@@ -4,6 +4,10 @@
 
 .container {
   background-color: lightblue;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+
 }
 
 .box {
@@ -14,6 +18,12 @@
 
 .box-1 {
   background-color: green;
+    /* grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 2;
+    grid-row-end:4 ; */
+    grid-column-start: 3;
+    grid-row-start: 2;
 }
 
 .box-2 {
@@ -39,6 +49,9 @@
 
 .box-7 {
   background-color: darkred;
+
+  grid-column-start: 1;
+  grid-row-start: 3;
 }
 
 .box-8 {
@@ -51,4 +64,6 @@
 
 .box-10 {
   background-color: navy;
+  grid-column-start: 2;
+  grid-row-start: 3;
 }
