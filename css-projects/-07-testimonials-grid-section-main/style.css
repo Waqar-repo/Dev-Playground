@@ -95,14 +95,50 @@ h1{
     margin-left: 42px;
 
 }
-@media (min-width: 375px) {
-    .box{
-        display: block;
-        position: relative;
+@media  (max-width: 375px) {
+    .container{
+       
+        display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    
+    gap: 40px;
         
-        
-        
-
     }
-  
+    .box{
+        
+        min-width: 300px;
+        max-width: 300px;
+          display: grid;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        margin-right: 10px;
+    
+       
+        
+    }
+   .jonathan{
+    grid-column-start: 1;
+    grid-row-start: 2;
+   }
+   .jeanette{
+   grid-column-start: 1;
+    grid-row-start: 3;
+   }
+   .patric{
+    grid-column-start: 1;
+    grid-row-start: 4;
+   }
+.kira{
+    grid-column-start: 1;
+    grid-row-start: 5;
 }
+.attribution{
+    display: flex;
+    position: absolute;
+    margin-top: -600px;
+    margin-left: 69px;
+}
+    }
+
+    
