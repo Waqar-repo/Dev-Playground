@@ -30,8 +30,10 @@ h1{
     border-radius: 8px;
     grid-column-start: span 2;
     
+    
 
 }
+
 .jonathan{
     background-color: #49556B;
     color: white;
@@ -102,7 +104,8 @@ h1{
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
     
-    gap: 40px;
+    /* gap: 15px; */
+    
         
     }
     .box{
@@ -113,8 +116,8 @@ h1{
         grid-template-columns:repeat(1, 1fr);
         grid-template-rows: repeat(5, 1fr);
         margin-right: 10px;
-    
-       
+    gap: 15px;
+  
         
     }
    .jonathan{
