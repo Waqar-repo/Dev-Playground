@@ -1,0 +1,75 @@
+body{
+    margin: 0;
+}
+
+.container{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 15px;
+    
+    
+    
+}
+
+
+
+
+.header h1{
+    color: hsl(212, 6%, 44%);
+    font-weight: 377;
+    text-align: center;
+    
+   
+}
+.header span{
+    color:  hsl(234, 12%, 34%);
+    font-weight: 600;
+    text-align: center;
+
+}
+
+.header p{
+    color:  hsl(212, 6%, 44%);
+    font-weight: 200;
+    text-align: center;
+}
+
+.title{
+    color: hsl(234, 12%, 34%);
+font-weight:400;
+}
+
+.content{
+    color: hsl(212, 6%, 44%);
+    font-weight: 200;
+}
+
+.cards{
+    display: grid;
+    grid-template-areas: 
+    'supervisor team-builder calculator '
+'supervisor  karma calculator';
+gap: 30px;
+}
+
+.karma{
+    grid-area: karma;
+}
+
+.supervisor{
+    /* display: flex; */
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.calculator{
+    margin-top: 70px;
+    margin-left: 10px;
+}
+
+.team-builder{
+    
+}
