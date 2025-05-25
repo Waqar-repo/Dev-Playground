@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: lightblue;
+  min-height: 60vh;
+  display: grid;
+grid-template-areas:
+'faisalabad faisalabad islamabad sahiwal'
+'faisalabad faisalabad islamabad sahiwal'
+'karachi karachi karachi sahiwal'
+
+;
+
+grid-auto-columns: 150px;
+grid-auto-rows: 150px;
+}
+
+.box {
+  color: white;
+  font-size: 4rem;
+  padding: 1rem;
+}
+
+.box-1 {
+  background-color: green;
+  grid-area: faisalabad;
+}
+
+.box-2 {
+  background-color: blueviolet;
+  grid-area: islamabad;
+}
+
+.box-3 {
+  background-color: blue;
+}
+
+.box-4 {
+  background-color: brown;
+  grid-area: sahiwal;
+}
+
+.box-5 {
+  background-color: coral;
+  grid-area: karachi;
+ 
+}
+
+.box-6 {
+  background-color: darkblue;
+}
+
+.box-7 {
+  background-color: darkred;
+}
+
+.box-8 {
+  background-color: darkslategray;
+}
+
+.box-9 {
+  background-color: gray;
+}
+
+.box-10 {
+  background-color: navy;
+}
+@media (max-width: 500px) {
+  .container{
+    grid-template-areas:
+    'faisalabad faisalabad lahore'
+    'karachi karachi lahore'
+    'sahiwal sahiwal lahore'
+    ;
+  }
+  
+}
