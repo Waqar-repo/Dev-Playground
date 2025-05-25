@@ -12,6 +12,12 @@ body{
     display: grid;
     gap: 24px;
     max-width: 1200px;
+    grid-template-areas: 
+    'purple'
+    'orange'
+    'blue'
+    'green'
+    'hotpink';
     
 
 }
@@ -37,18 +43,24 @@ h1{
 
 .box1{
     background-color:#BA56F6 ;
+    grid-area: purple;
 }
 .box2{
     background-color: #FF6161;
+    grid-area: orange;
+
 }
 .box3{
     background-color: #505CCA;
+    grid-area: blue;
 }
 .box4{
     background-color:#3DAD99 ;
+    grid-area: green;
 }
 .box5{
     background-color: #BE3690;
+    grid-area: hotpink;
 }
 
 
@@ -57,6 +69,31 @@ h1{
         min-height: 300px;
     }
     .container{
+        grid-template-areas: 
+        'purple purple'
+        'orange blue'
+        'green blue'
+        'hotpink hotpink'
+        ;
+         padding-bottom: 4rem;
+    }
+    /* .box1{
+        grid-area: purple;
+    }
+    .box2{
+        grid-area: orange;
+    }
+    .box3{
+        grid-area:blue ;
+    }
+    .box4{
+        grid-area:green;
+    }
+    .box5{
+        grid-area: hotpink;
+        padding-bottom: 4rem;
+    } */
+    /* .container{
         grid-template-columns: 1fr 1fr;
         padding-bottom: 4rem;
     }
@@ -72,13 +109,18 @@ h1{
     .box5{
         grid-column-start: span 2;
         padding-bottom: 4rem;
-    }
+    } */
 }
 
 @media (min-width:1000px) {
     .container{
 
-        grid-template-columns: repeat(4,1fr);
+        grid-template-areas: 
+        'purple purple orange blue'
+        'green hotpink hotpink blue'
+        
+        ;
+        /* grid-template-columns: repeat(4,1fr); */
         min-width: 300px;
 }
 }
