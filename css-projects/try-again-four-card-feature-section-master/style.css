@@ -23,7 +23,7 @@ color: hsl(234, 12%, 34%);
 }
 
 p{
-     font: 200;
+     font-weight: 200;
     color: hsl(212, 6%, 44%);
     margin-bottom: 30px;
     /* max-width: 1200px; */
@@ -31,7 +31,7 @@ p{
 
 }
 .card p{
-    font: 200;
+    font-weight: 200;
     color: hsl(212, 6%, 44%);
     text-align: left;
     padding-bottom: 22px;
@@ -106,10 +106,11 @@ img{
 
  @media screen and (max-width:467px) {
     .container{
+       
        display: flex;
        flex-direction: column;
 
-      /* margin-bottom: 10px; */
+      margin-bottom: 10px;
     }
     .card.one{
         
@@ -121,6 +122,11 @@ img{
    
     transform: none;
 
+}
+
+.header p{
+    font-size: 13px;
+    margin-inline: 13px;
 }
     /* .card.one{
          grid-row-start: 1;
