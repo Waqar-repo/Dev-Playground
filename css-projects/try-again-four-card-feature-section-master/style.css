@@ -104,18 +104,21 @@ img{
     margin-bottom: 100px;
 }
 
- @media screen and (max-width:768px) {
+ @media screen and (max-width:467px) {
     .container{
-        grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
-      margin-bottom: 10px;
+       display: flex;
+       flex-direction: column;
+
+      /* margin-bottom: 10px; */
     }
     .card.one{
+        
         transform: none;
-   align-self: center;
+  
    
 }
 .card.three{
-    align-self: center;
+   
     transform: none;
 
 }
