@@ -107,8 +107,9 @@ img{
  @media screen and (max-width:467px) {
     .container{
        
-       display: flex;
-       flex-direction: column;
+       /* display: flex;
+       flex-direction: column; */
+       grid-template-columns: 1fr;
 
       margin-bottom: 10px;
     }
@@ -122,6 +123,14 @@ img{
    
     transform: none;
 
+}
+
+.card.four{
+     grid-row-start: auto;
+    grid-row-end: auto;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    
 }
 
 .header p{
