@@ -1,4 +1,7 @@
 //using let
+
+console.log(name);
+// console.log(firstName);
 let firstName = 'Waqar';
 let lastName = 'Ahmad';
 // let userIntro = 'my name is Waqar Ahmad';
@@ -23,4 +26,4 @@ const hoursInDay=24;
 // hoursInDay = 18;
 
 //var
-
+var name = 'hina';
