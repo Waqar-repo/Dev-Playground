@@ -1,0 +1,56 @@
+body {
+  font-family: sans-serif;
+  --first-colour:#fa6400;
+  --second-colour:#405cf5;
+  --rounded:24px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h2 {
+    color: var(--second-colour);
+}
+
+a {
+  color: var(--first-colour);
+  text-decoration: none;
+  border: 2px solid var(--first-colour);
+  padding: 0.5em 1em;
+  font-size: 14px;
+  display: inline-block;
+  height: 32px;
+  vertical-align: middle;
+  border-radius: var(--rounded);
+}
+
+strong {
+  color: var(--first-colour);
+}
+
+span {
+    color: var(--first-colour);
+}
+
+code {
+    color: var(--second-colour);
+}
+
+button {
+  border: none;
+  color: #fff;
+  padding: 0.5em 1em;
+  border-radius: var(--rounded);
+  font-size: 14px;
+  font-family: inherit;
+  height: 32px;
+}
+
+.previous-button {
+  background-color: var(--first-colour);
+}
+
+.next-button {
+  background-color: var(--second-colour);
+}
