@@ -1,5 +1,6 @@
-let userName = 'WAQA';
-let userAge = 19;
+let userName = 'WAQAR';
+// let userAge = 19;
+let userAge = parseInt(prompt('Enter your age'));
 // const userGener = prompt('What is your Gender  He or She ')
 
 
@@ -15,7 +16,8 @@ if(userName){
     console.log(`Name: ${userName}`);
 }
 if (userAge){
-    console.log(`Age: ${userAge}`);
+    // console.log(`Age: ${userAge}`);
+    alert(`your age is ${userAge}`)
 }
 if(!userAge){
     console.log('Please enter valid number');
@@ -29,7 +31,7 @@ if(!userName){
 
 // console.log(`Name: ${userName}`);
 // console.log(`Age: ${userAge}`);
-debugger
+// debugger
 
 if(userAge >= 1 && userAge <= 4){
 console.log( `${userName} Is a Infant`);
@@ -64,3 +66,14 @@ if(userAge>=20){
 
 // // console.log(`type of age is ${typeof(userAge)}`);
 console.log('Program Ended');
+
+let maleOrFemale = prompt('Please enter your gender')
+if (maleOrFemale == 'male'|| maleOrFemale == 'Male'){
+    alert('You have allocated a Male hostel');
+}
+else if(maleOrFemale == 'fale'|| maleOrFemale == 'Fale'){
+    alert('You have been allocated a female hostel');
+}
+else{
+    alert('Please select the Gender')
+}
