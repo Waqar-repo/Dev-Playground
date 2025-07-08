@@ -1,68 +1,62 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('todo-form');
-  const taskInput = document.getElementById('task-input');
-  const taskList = document.getElementById('task-list');
+console.log('Program Started');
 
-  // Load tasks from localStorage
-  let tasks = JSON.parse(localStorage.getItem('tasks')) || [];
+// let num = 1;
 
-  function saveTasks() {
-    localStorage.setItem('tasks', JSON.stringify(tasks));
-  }
+// debugger
 
-  function renderTasks() {
-    taskList.innerHTML = '';
-    tasks.forEach((task, index) => {
-      const li = document.createElement('li');
-      li.className = task.completed ? 'completed' : '';
+// while(num <= 100){
 
-      const span = document.createElement('span');
-      span.textContent = task.text;
-      span.style.cursor = 'pointer';
-      span.addEventListener('click', () => toggleComplete(index));
+//     console.log(num);
 
-      const actions = document.createElement('div');
-      actions.className = 'actions';
+// num++
 
-      const deleteBtn = document.createElement('button');
-      deleteBtn.innerHTML = '🗑️';
-      deleteBtn.addEventListener('click', () => deleteTask(index));
+// }
 
-      actions.appendChild(deleteBtn);
+// console.log('Program Ended');
 
-      li.appendChild(span);
-      li.appendChild(actions);
-      taskList.appendChild(li);
-    });
-  }
+console.log('------');
+//task
+console.log('Task');
 
-  function addTask(text) {
-    tasks.push({ text, completed: false });
-    saveTasks();
-    renderTasks();
-  }
+// const friendName = ['Waqar', 'Asad', 'Raza', 'Rana', 'Humza',];
 
-  function deleteTask(index) {
-    tasks.splice(index, 1);
-    saveTasks();
-    renderTasks();
-  }
+// let i = 0
+// while(i < friendName.length){
+//     let lastname = 'Procoder'
 
-  function toggleComplete(index) {
-    tasks[index].completed = !tasks[index].completed;
-    saveTasks();
-    renderTasks();
-  }
+//     console.log(`${i+1}. ${friendName[i]} ${lastname}`);
+//     i++
+// }
 
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const text = taskInput.value.trim();
-    if (text) {
-      addTask(text);
-      taskInput.value = '';
-    }
-  });
 
-  // Initial render
-  renderTasks();
-});
+// let i = 1
+// while(i <= 20){
+//     if(i % 2 !== 0){
+//     console.log(i);
+//     }
+//     i++
+// }
+
+
+
+// const question = prompt('What is your Password').toUpperCase()
+// const passWord = 'ALPINE'
+
+// while(question !== passWord){
+//     question = prompt('Wrong password try again').toUpperCase()
+
+    
+// }
+// alert(`Correct Password`)
+
+
+let num = 1
+let sum = 0
+while(num <= 50){
+  sum += num
+
+ num++
+
+    
+}
+ console.log(sum);
