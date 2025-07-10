@@ -10,6 +10,8 @@ console.log('Program Start')
 //     console.log(i);
 // }
 
+debugger
+
 let i = 0 
 
 do {
