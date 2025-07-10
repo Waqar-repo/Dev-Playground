@@ -60,3 +60,7 @@ while(num <= 50){
     
 }
  console.log(sum);
+
+
+
+
