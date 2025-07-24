@@ -27,7 +27,7 @@ function sayHi(){
     console.log('say Hiiiiii');
     
 }
-//sayHi function will pass to x(i) and sayHi() will call as i in x(i)
+//sayHi function will pass to x(i) as argument and sayHi() will call as i in x(i)
 //sayHi()is a callback fucntion
 x(sayHi)
 
