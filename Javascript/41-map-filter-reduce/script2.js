@@ -30,3 +30,16 @@ const encryptPassword = passWord.reduce((acc,curr,index)=>{
 },1)
 
 console.log(encryptPassword);
+
+const names = ['waqar','ahmad','hina','razzaq']
+
+let name = names.reduce((acc,curr,index,arr)=>{
+    console.log(index,acc,curr);
+    console.log(names[2].concat(' ' , names[1]));
+    debugger
+    return 'gg'
+    
+  
+
+},0)
+console.log(name);
