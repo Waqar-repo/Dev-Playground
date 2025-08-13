@@ -62,3 +62,36 @@ const {name:userName,age:userAge} = user
 
 //also called multi level destructuring
 const {address:{city:myCity}} = user
+
+
+//if we create a function and pass/accept a parameter,
+//  we can apply destructuring there too
+
+
+function intro(userObj){
+  console.log(userObj);
+}
+intro(user)
+
+//imagine you do not need whole object but name,age
+
+//this is how to destructure an object within a parameter
+function intro1({age,name,address:{city}}){
+  console.log(name, age,city)
+
+}
+intro1(user)
+
+//same with array
+
+function printColor([a,b,,c]){
+  console.log([a,b,c]);
+}
+printColor(colors)
+
+// doing same but object symbol
+
+function printColor1({4:asd12}){
+  console.log(asd12);
+}
+printColor1(colors)
