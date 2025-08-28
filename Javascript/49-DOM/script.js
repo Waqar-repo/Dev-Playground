@@ -63,8 +63,9 @@ document.body.children[4].src = 'https://media.istockphoto.com/id/517188688/phot
 
 
 function changeTwoImg(){
-    document.body.children[5].children[2].children[2].src = 'https://media.istockphoto.com/id/471926619/photo/moraine-lake-at-sunrise-banff-national-park-canada.jpg?s=612x612&w=0&k=20&c=mujiCtVk5QA697SD3d8V8BGmd91-8HlxCNHkolEA0Bo='
-    
+    document.body.children[5].children[2].children[4].src = 'https://media.istockphoto.com/id/471926619/photo/moraine-lake-at-sunrise-banff-national-park-canada.jpg?s=612x612&w=0&k=20&c=mujiCtVk5QA697SD3d8V8BGmd91-8HlxCNHkolEA0Bo='
+
+   document.body.children[5].children[3].children[1].src =' https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg'
+
+
 }
-
-
