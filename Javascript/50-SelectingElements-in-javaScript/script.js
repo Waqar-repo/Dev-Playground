@@ -66,7 +66,9 @@ const jsImg = document.querySelector('[alt="javascript roadmap"]')
 //selecting 1st li in ul nesdted
 
 // you can put any valid css selector in query selector
-const li = document.querySelector('ul li')
+const ul = document.querySelector('ul')
+
+const imginul= ul.querySelectorAll('img')
 
 //test
 
@@ -93,3 +95,5 @@ allImgss.forEach((img , i) => {
 
 const head = document.getElementsByTagName('h2')
 head[0].innerText = 'waqar'
+
+//
