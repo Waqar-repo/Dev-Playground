@@ -16,3 +16,36 @@ p b {
 [procodrr="akash"] {
     color: orangered;
 }
+.css-image{
+    color: red;
+    /* font-size: 19px;
+    font-family: cursive;
+    font-weight: 700px;
+    text-decoration-line: none; */
+}
+.green-link{
+    color: teal;
+     font-size: 19px;
+    font-family: cursive;
+    font-weight: 700px;
+    text-decoration-line: none;
+}
+.wavy-link{
+    text-decoration-line:underline ;
+    text-decoration-style: wavy;
+}
+.my-link{
+    border: 2px solid green;
+}
+.hidden{
+    display: none;
+    color: purple;
+font-style: italic;
+background-color: lightgray;
+padding: 10px;
+border-radius: 8px;
+
+color: red;
+font-weight: bold;
+
+}
