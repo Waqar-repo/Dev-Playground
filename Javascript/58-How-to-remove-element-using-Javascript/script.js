@@ -22,3 +22,4 @@ for (let i = 1; i <= 100; i++) {
 // newImage.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/1.png`
 
 // container.append(newImage)
+
