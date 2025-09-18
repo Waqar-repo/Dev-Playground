@@ -114,3 +114,31 @@ for(const p of formobject.entries()) // itertaing on form to get value in key va
     
 //     }) 
 
+// Challenge 4: Character Counter 
+//Create a form with a text input and a <span> 
+// showing how many characters the user has typed (live update).
+
+// const input = document.querySelector('input') 
+// const span = document.querySelector('span') 
+// input.addEventListener('input', function (e)
+// { let ee = e.target.value 
+//     for(let i = 0; i <= ee.length; i++)
+//         { span.innerText = i } })
+
+
+//Challenge 5: Password Confirmation
+// Create two password fields (password and confirm password).
+// On blur, if both don’t match, show a red error message below the input.
+
+    // const password = document.querySelector('.password') 
+    // const cPassword = document.querySelector('.Confirmpassword') 
+    // const span = document.querySelector('.passwordMatch') 
+    // let p1 
+    // let p2
+    //  password.addEventListener('change', function(e)
+    //  { p1 = e.target.value }) 
+    //  cPassword.addEventListener('change', function(e)
+    //  { p2 = e.target.value if(p1 === p2)
+    //     { span.innerText = 'Password Matched'
+    //          span.classList.remove('passwordMatch') } 
+    //          else{ span.innerText = 'Password do not Match ..!' } })
