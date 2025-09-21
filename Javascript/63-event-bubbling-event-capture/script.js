@@ -222,6 +222,12 @@ If you click .inner: only "Inner listener 1" should run (not "Inner listener 2",
 
 If you click .outer: "Outer clicked" should log normally.
 
+Key difference from stopPropagation:
+
+stopPropagation() stops bubbling but doesn’t stop other listeners on the same element.
+
+stopImmediatePropagation() stops both other listeners on the same element and further bubbling.
+
 */
 
 
