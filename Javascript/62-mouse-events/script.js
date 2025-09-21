@@ -215,13 +215,209 @@ let count = 0
 //     console.log(e);
 // })
 
-// card.addEventListener('pointerleave', (e) => {
-//     const newCard = document.createElement('div')
-//     newCard.classList.add('card')
-//     newCard.innerText = count++
-//     container.append(newCard)
-//     console.log(e);
+card.addEventListener('pointerleave', (e) => {
+    const newCard = document.createElement('div')
+    newCard.classList.add('card')
+    newCard.innerText = count++
+    container.append(newCard)
+    console.log(e);
+})
+
+
+
+
+
+//practice 
+// Challenge 1: Click Counter Cards
+
+// Task: Every time you double-click on the .box, 
+// create a new <div> with class "mini-box" that shows the count number.
+
+// const box = document.querySelector('.box')
+// const wrapper = document.querySelector('.wrapper')
+// let num = 1
+
+// box.addEventListener('dblclick', (e) => {
+//   const newDiv = document.createElement('div')
+//   newDiv.classList.add('mini-box')
+//   newDiv.innerText = num
+//   num++
+//   newDiv.style.cssText = " display: flex; flex-wrap: wrap;"
+//   box.append(newDiv)
+
+
+// })
+
+// Challenge 2: Mouse Enter Highlight
+
+// Task: When the mouse enters the .circle, change its background color to green.
+//  When the mouse leaves, change it back to red.
+
+// const circle = document.querySelector('.circle')
+
+// circle.addEventListener('mouseenter', (e) =>{
+//   circle.style.cssText = " background-color: green;"
+// })
+
+// circle.addEventListener('mouseleave', (e) =>{
+//   circle.style.cssText = " background-color: red;"
 // })
 
 
 
+// Challenge 3: Touch Move Trail (Mobile Friendly)
+
+// Task: When the user touches and moves their finger inside the .pad, 
+// create small dots (.dot) where the finger moves.
+
+
+// const pad = document.querySelector('.pad')
+
+// pad.addEventListener('touchmove', (e) => {
+//   e.preventDefault()
+//     const touch = e.touches[0];
+// const rect = pad.getBoundingClientRect()
+// const x = e.touches[0].clientX - rect.left
+// const y = e.touches[0].clientY - rect.top
+//     const dot = document.createElement('div');
+//     dot.classList.add('dot');
+//     dot.style.left = `${x}px`;
+//     dot.style.top = `${y}px`;
+
+//     pad.appendChild(dot);
+
+
+// })
+
+
+// Challenge 4: Double-Click Color Boxes
+
+// Task:
+
+// There’s a .color-box element.
+
+// On double-click, its background color should toggle between blue and red.
+
+// const box = document.querySelector('.color-box');
+// box.addEventListener('dblclick', (e) =>{
+//   box.classList.toggle('red')
+//   box.classList.toggle('blue')
+// })
+
+// // css
+// .blue{
+//   background-color: blue;
+// }
+
+// .red{
+//   background-color: red;
+// }
+
+// //html
+// <!DOCTYPE html>
+// <html lang="en">
+// <head>
+//   <meta charset="UTF-8">
+//   <title>Double-Click Color Boxes</title>
+//   <style>
+//     .color-box { width: 150px; height: 150px; margin: 50px auto; cursor: pointer; }
+//   </style>
+// </head>
+// <body>
+//   <div class="color-box blue"></div>
+//   <script src="app.js"></script>
+// </body>
+// </html>
+
+
+// Challenge 5: Hover Counter
+
+// Task:
+
+// There’s a .hover-counter element.
+
+// Every time the mouse enters the element, increase a counter and display it inside the box.
+
+// const counterBox = document.querySelector('.hover-counter');
+// let count = 0;
+// counterBox.addEventListener('mouseenter', (e) =>{
+//   counterBox.innerHTML = count++
+// })
+
+
+
+// Master Mini Challenge: Interactive Card Box
+
+// Task:
+
+// There’s a .master-box element on the page.
+
+// Single-click on the box → toggle the border color between black and orange.
+
+// Double-click on the box → toggle the background color between blue and red.
+
+// Mouse enters the box → show a counter of how many times the mouse has entered inside the box.
+
+// const masterBox = document.querySelector('.master-box');
+// let enterCount = 0;
+// masterBox.addEventListener('mouseenter', (e) =>{
+//   masterBox.innerHTML = ++enterCount
+// })
+
+// masterBox.addEventListener('click', (e) =>{
+//   masterBox.classList.toggle('orange')
+// })
+
+// masterBox.addEventListener('dblclick', (e) =>{
+//   masterBox.classList.toggle('red')
+// })
+
+// Mini Challenge 6: Click & Double-Click Counter
+
+// Task:
+
+// There’s a .counter-box.
+
+// Single click → increase the single-click counter and display it.
+
+// Double-click → increase a double-click counter and display it below the single-click count.
+
+// const box = document.querySelector('.counter-box');
+// let clickCount = 0;
+// let dblClickCount = 0;
+// console.log(box.childNodes);
+
+// box.addEventListener('click',(e) => {
+// box.childNodes[0].textContent = `clicks: ${++clickCount}`
+// })
+
+// box.addEventListener('dblclick',(e) => {
+// box.childNodes[2].textContent = `Double-clicks: ${++clickCount + 1}`
+// })
+
+
+// Mini Challenge 8: Multi-Counter Boxes
+
+// Task:
+
+// There are 3 boxes side by side.
+
+// Click on a box → increment a counter only for that box and display it inside the box.
+
+// Double-click → reset that box’s counter to 0.
+
+// const boxes = document.querySelectorAll('.box');
+// let count = 0
+// boxes.forEach((element) =>{
+//   element.count = 0
+// element.addEventListener('click',(e) =>{
+// element.count++
+// element.innerHTML = element.count
+
+  
+// })
+// element.addEventListener('dblclick', (e) =>{
+//    element.count = 0
+//   element.innerHTML = element.count
+// })
+// })
