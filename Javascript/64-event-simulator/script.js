@@ -92,6 +92,7 @@ setTimeout(()=>{
 
 
 /*practice */
+
 /*i have set interval of every 2 sec and timeout 5 sec
 so interval runs untill count is > 3 and return to stop the execution */
 
@@ -113,3 +114,95 @@ so interval runs untill count is > 3 and return to stop the execution */
    
 //     },2000)
 
+/*Your Job in app.js
+
+Select the button and container.
+
+Add an event listener on the button that creates a new .box with a number inside.
+
+Write a loop (or setInterval) that simulates clicking the button 10 times automatically.*/
+
+// const btn = document.querySelector('#addBoxBtn')
+// const container = document.querySelector('.container')
+// let count = 1
+
+// btn.addEventListener('click',(e) =>{
+// const newbtn = document.createElement('div')
+// newbtn.classList.add('box')
+// newbtn.innerText = count++
+// container.append(newbtn)
+
+// })
+
+
+// const intId = setInterval(()=>{
+//   if(count == 10){
+//     clearInterval(intId)
+//     // return
+//   }
+//   btn.click()
+// })
+
+
+/*🚀 Coding Challenge 2: Focus & Blur Simulation
+
+👉 Task:
+Create a text input field and a button.
+
+When the page loads, after 1 second, automatically focus on the input (like the user clicked inside it).
+
+After 3 seconds, automatically blur the input (like the user clicked away).
+
+When the input is blurred, log "Input blurred" in the console.*/
+
+
+
+// const input = document.querySelector('input')
+
+// let count = 0
+
+// setTimeout(()=>{
+// input.focus()
+// },1000)
+
+
+// setTimeout(()=>{
+// input.blur()
+// },3000)
+
+
+// input.addEventListener('blur',()=>{
+//   console.log('Input blurred')
+// })
+
+/*🚀 Coding Challenge 3: Form Submit + Reset Simulation
+
+👉 Task:
+
+Create a form with an input field and a submit button.
+
+When the page loads, automatically submit the form after 2 seconds.
+
+When the form is submitted, log "Form submitted" in the console.
+
+After 5 seconds, automatically reset the form (clear the input).
+
+When the form resets, log "Form reset" in the console. */
+
+// const form = document.querySelector('form')
+
+// setTimeout(()=>{
+//   form.submit()
+// },2000)
+
+// form.addEventListener('submit',(e)=>{
+//   e.preventDefault()
+//   console.log('Form submitted')
+// })
+
+// setTimeout(()=>{
+//   form.reset()
+// },5000)
+// form.addEventListener('reset',(e)=>{
+//   console.log('Form reset')
+// })
