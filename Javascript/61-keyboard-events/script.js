@@ -12,6 +12,7 @@ const input = document.querySelector('input')
 
 //usually we usually do that on windows
 //keypress count key keyup and key down
+
 // window.addEventListener('keypress', (e) => {
     
 //     console.log('Key code :',e.code);
