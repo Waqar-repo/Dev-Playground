@@ -206,3 +206,64 @@ When the form resets, log "Form reset" in the console. */
 // form.addEventListener('reset',(e)=>{
 //   console.log('Form reset')
 // })
+
+
+/* 
+Master Challenge: “Interactive Dashboard Automation”
+What You Need to Do in app.js
+Select the button, container, input, and form.
+Simulate 5 card additions automatically (click simulation).
+After all cards are added:
+Focus the input after 1s.
+Blur the input after 2s → log "Input blurred".
+After the input blurs:
+Submit the form automatically → log "Form submitted".
+Immediately reset the form → log "Form reset".
+*/
+
+// const btn = document.querySelector("#addCardBtn")
+// const container = document.querySelector(".container")
+// const input = document.querySelector("input")
+// const form = document.querySelector('form')
+
+// let count = 1
+
+// btn.addEventListener('click',(e) =>{
+// const newbtn = document.createElement('div')
+// newbtn.classList.add('card')
+// newbtn.innerText = count++
+// container.append(newbtn)
+
+// })
+
+
+// const intId = setInterval(()=>{
+//   if(count > 5){
+//     clearInterval(intId)
+//     setTimeout(()=>{
+//       input.focus()
+//     },1000)
+
+//     setTimeout(()=>{
+//       input.blur()
+//       console.log('Input blurred')
+//     },2000)
+
+//     setTimeout(()=>{
+//      form.submit()
+  
+//     },3000)
+
+//     setTimeout(()=>{
+//       form.reset()
+//       console.log('Form reset')
+//     },4000)
+//   }
+//   btn.click()
+
+// },200)
+// form.addEventListener('submit',(e)=>{
+//   e.preventDefault()
+//   console.log('Form submitted')
+// })
+ 
