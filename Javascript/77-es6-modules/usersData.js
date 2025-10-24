@@ -1860,8 +1860,11 @@ const usersData = [
   },
 ]
 
-const myName = 'Waqar Ahmad'  //export a veriable
+export default function getFirstUser(){
+  return usersData[0]
+}
 
+const myName = 'Waqar Ahmad'  //export a veriable
 const city = 'Fife'
 export{city as shahar} // this way, can change the name /rename the of city and export changed name
 export{ usersData , myName } //name export

@@ -575,4 +575,10 @@ const productsData = [
   },
 ]
 // export {productsData} //name export
+
+// name exporta function
+export function getFirstProduct(){
+  return productsData[0]
+}
+
 export default productsData //default export
