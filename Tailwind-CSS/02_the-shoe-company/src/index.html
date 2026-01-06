@@ -3,10 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="./output.css">
     <title>The shoes company</title>
 </head>
-<body>
-    <section id="hero"></section>
+<body class="bg-black text-white">
+    <header class=" lg:text-2xl flex items-center justify-between px-12">
+        <a href="./index.html">
+        <img class="w-14 lg:text-2xl lg:w-32" src="/images/logo.png" alt="logo">
+        <p class=" text-[5px] -mt-3  lg:-mt-8      lg:text-[12px] ">The Shoe Company</p>
+
+        </a>
+        <nav class=" hidden space-x-10  sm:block sm:font-light lg:block lg:text-2xl  lg:font-bold ">
+<a href="/src/index.html">Home</a>
+<a href="#about">How It Works</a>
+<a href=".">About</a>
+<a href="testimonials">Testimonials</a>
+<a href="#contact">Contact</a>
+        </nav>
+        <button class=" text-3xl  sm:hidden lg:hidden">☰</button>
+    </header>
+    <section id="hero" class="lg:flex lg:justify-between lg:mt-30">
+        <h1 class="text-3xl w-0.5 ml-11.5 mt-8.5 lg:text-[103px] ">THE SHOE COMPANY</h1>
+        <div>
+            <img class="w-104 lg:w-189 lg:absolute lg:top-45 lg:left-135" src="/images/hero-image.png" alt="">
+        </div>
+    </section>
 </body>
 </html>
