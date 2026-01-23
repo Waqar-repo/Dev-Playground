@@ -5,7 +5,8 @@
   "main": "babel.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "babel ./script.js -d output"
+    "build": "babel ./script.js -d output",
+    "dev": "babel script.js -d output --watch"
   },
   "keywords": [],
   "author": "",
