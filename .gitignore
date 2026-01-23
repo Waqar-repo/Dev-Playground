@@ -2,3 +2,5 @@
 node_modules
 src/output.css
 output.css
+.parcel-cache
+dist
