@@ -1,0 +1,38 @@
+.card{
+    max-width: 250px;
+    border: 1px solid black;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    transition: all 1000ms ease-out;
+}
+
+.card img{
+    width: 100%;
+    max-height: 150px;
+}
+.card h3 , .card p{
+    margin: 6px 0;
+
+}
+.card-content{
+    padding: 0 10px;
+}
+.card:hover{
+    border: 1px blue solid;
+    transition: all 500ms ease-in;
+    
+    background-color: rgba(143, 232, 125, 0.134);
+
+}
+.card:after{
+transition: all 500ms ease-out;
+background-color: rgba(143, 232, 125, 0.134);
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    justify-content: space-around;
+    /* align-items: flex-start; */
+}
