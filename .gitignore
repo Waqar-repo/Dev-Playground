@@ -4,3 +4,4 @@ src/output.css
 output.css
 .parcel-cache
 dist
+.DS_Store
