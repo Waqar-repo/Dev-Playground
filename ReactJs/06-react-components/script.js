@@ -1,12 +1,12 @@
 import { createRoot } from 'react-dom/client';
 import './style.css';
-import React from 'react';
+import React, { Children } from 'react';
 
-function Card({title, image, brand, price}) {
-//   const {title, image, brand, price} = props;
-//   console.log(key);
+function Card({ title, image, brand, price }) {
+  //   const {title, image, brand, price} = props;
+  //   console.log(key);
   return (
-    <div className="card" >
+    <div className="card">
       <img src={image} alt="iphone" />
       <div className="card-content">
         <h3>{title}</h3>
@@ -41,3 +41,31 @@ fetch('https://dummyjson.com/products')
     );
   })
 
+// function Card2(){
+//   return <h1>Hello word</h1>
+// }
+
+// console.log(Card2());
+
+// console.log(
+
+//   React.createElement(Card, {
+//     title: 'Iphone',
+//     brand: 'Apple',
+//     image:
+//       'https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp',
+//       key:2,
+//       price:12
+//   })
+// )
+
+// root.render(
+//   <Card
+//     title="Iphone"
+//     image="https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp"
+//     brand="Apple"
+//     price="899"
+//   />,
+// );
+
+// console.log(<Card title = 'Iphone' image='https://cdn.dummyjson.com/product-images/beauty/essence-mascara-lash-princess/thumbnail.webp' brand = 'Apple' price = '899'/>);
