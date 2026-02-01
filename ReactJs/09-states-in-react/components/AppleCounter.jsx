@@ -1,34 +1,38 @@
 import Button from './Button';
 import Applebasket from './Applebasket';
 import './AppleCounter.css';
-import { createRoot } from 'react-dom/client';
+
+import { useState } from 'react';
 
 const LeftArrow = new URL('../assets/images/left-arrow.png', import.meta.url);
 const RightArrow = new URL('../assets/images/right-arrow.png', import.meta.url);
 
-const totalApple = 10;
-let rightApple = 0;
-let leftApple = totalApple - rightApple;
+// let rightApple = 0;
 
 
-const root = createRoot(document.querySelector('#root'));
+
+
 
 const AppleCounter = () => {
+  const totalApple = 10;
+  
+  const [rightApple,setRightAppleCount]= useState(0)
+  const [leftApple,setLeftAppleCount] = useState( totalApple)
+
   const leftArrowHandler = () => {
     if (rightApple > 0) {
-      rightApple--;
-      leftApple++;
-      root.render(<AppleCounter />);
+      setLeftAppleCount(leftApple + 1)
+      setRightAppleCount(rightApple - 1)
+ 
     }
-  };
+  }
 
   const rightArrowHandler = () => {
     if (leftApple > 0) {
-      leftApple--;
-      rightApple++;
-      root.render(<AppleCounter />);
+      setLeftAppleCount(leftApple - 1)
+      setRightAppleCount(rightApple + 1)
     }
-  };
+  }
 
   return (
     <section>
