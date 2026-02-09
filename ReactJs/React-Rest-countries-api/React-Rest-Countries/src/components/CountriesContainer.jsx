@@ -1,20 +1,25 @@
 import React from 'react';
 import countriesdata from '../../countriesdata';
 import CountryCard from './CountryCard';
-export default function CountriesContainer() {
+import SearchBar from './SearchBar';
+export default function CountriesContainer({queryProp}) {
   // console.log(countriesdata)
-  const array = countriesdata.map((country) => {
-    console.log(country.region);
+
+  return <div className="countries-container">{
+
+countriesdata.filter((country)=> country.name.common.toLocaleLowerCase().includes(queryProp)).map((country) => {
+// console.log(country.name.common)
+
     return (
       <CountryCard
+      key={country.name.common}
         name={country.name.common}
         flag={country.flags.svg}
-        population={country.population}
-        capital={country.capital[0]}
+        population={country.population.toLocaleString()}
+        capital={country.capital?.[0]}
         region={country.region}
       />
     );
-  });
-  // console.log(array)
-  return <div className="countries-container">{array}</div>;
+  })}
+  </div>
 }

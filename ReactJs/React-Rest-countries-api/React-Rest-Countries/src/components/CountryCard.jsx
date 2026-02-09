@@ -1,9 +1,9 @@
 import React from 'react';
 
 function CountryCard(props) {
-  const {name,flag,population,capital,region} = props
+  const { name, flag, population, capital, region } = props;
   return (
-    <a className="country-card" href="/country.html?name=Mauritania">
+    <a className="country-card" href={`country.html?${name}`}>
       <img src={flag} alt="flag" />
       <div className="card-text">
         <h3 className="card-title">{name}</h3>
