@@ -15,7 +15,7 @@ const App = () => {
           <SearchBar setQueryProp={setQuery}/>
           <SelectMenu />
         </div>
-       <CountriesContainer queryProp={query}/>
+       {query === 'unmount' ? '' :<CountriesContainer queryProp={query}/>}
       </main>
     </>
   );
