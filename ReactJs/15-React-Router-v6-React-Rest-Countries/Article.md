@@ -1,112 +1,230 @@
+In React, there is only one HTML file, which is index.html.
 
+React applications are called Single Page Applications (SPA).
+This means:
 
-Lifting State Up in React
+The browser loads only one HTML file.
 
-Sometimes two sibling components need to communicate with each other.
+The page does not reload when navigating.
 
-Normally, siblings cannot talk directly because they are separate components.
+React changes the UI dynamically using JavaScript.
 
-One way is using callback functions, but the clean and efficient way is:
+In vanilla JavaScript or traditional websites, we can create multiple HTML files like:
 
- Lift the state up to their closest parent component.
+index.html
+contact.html
+about.html
 
+And navigate between them.
 
-That means:
+But in React:
 
-Create the useState in the parent.
+👉 We cannot create multiple HTML files for each page.
+👉 We only have one HTML file.
 
-Pass data and functions to children using props.
+So the question is:
 
-Children use those props to send and receive data.
+If we only have one HTML file, how can we create multiple pages like /home, /contact, /country?
 
-Example: Search Feature
+To solve this problem, we use a library called:
 
-Imagine we have:
+react-router-dom
 
-A SearchInput component
+Routing is not a built-in feature of React.
+React is a UI library, not a full framework.
 
-A CardList component (shows filtered data)
+Installing React Router
 
-Both are inside a parent component.
+To install React Router:
 
-We lift the state to the parent.
+npm install react-router-dom
+Creating a Router (Modern Data Router API)
 
+In modern React Router (v6.4+), we use:
 
---------------------------------------------------------
+createBrowserRouter()
 
-useEffect in React
+Example:
 
-useEffect is a hook that runs side effects in React.
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <div>Hello World</div>,
+  },
+]);
+Explanation:
 
-It takes:
+path → Defines the URL route.
 
-A callback function
+element → Defines what component should render on that route.
 
-A dependency array
+So:
 
-useEffect(() => {
-  // code here
-}, [dependencies]);
+/ → renders "Hello World"
 
+createBrowserRouter() returns a router configuration object.
+This object contains all route definitions.
 
-The code runs whenever the dependencies change.
+Rendering the Router
 
-1️ Run Once (Component Mount)
+Normally, in React, we render <App /> like this:
 
-If we pass an empty array [], the effect runs only once when the component mounts.
+ReactDOM.createRoot(root).render(<App />);
 
-Example: Fetching API data
+But when using React Router (Data Router API), we render:
 
-import { useEffect, useState } from "react";
+<RouterProvider router={router} />
+
+Example:
+
+const root = document.getElementById("root");
+
+ReactDOM.createRoot(root).render(
+  <RouterProvider router={router} />
+);
+
+Now React Router controls which component should render based on the URL.
+
+So instead of rendering our components directly, we render RouterProvider, and it uses the router configuration to render the correct component.
+
+Rendering Different Components on Different Routes
+
+Example:
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
+  },
+]);
+
+Now:
+
+/          → App component renders
+/contact   → Contact component renders
+Nested Routes (Children)
+
+We can create nested routes using children.
+
+Example:
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/contacts",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
+
+Here:
+
+App becomes a layout component.
+
+Home and Contact are child routes.
+
+Using <Outlet />
+
+When we use children, we must use the <Outlet /> component.
+
+In App.jsx:
+
+import { Outlet } from "react-router-dom";
 
 function App() {
-  const [countriesData, setCountriesData] = useState([]);
+  return (
+    <>
+      <Header />
+      <Outlet />
+    </>
+  );
+}
+Why Use Outlet?
 
-  useEffect(() => {
-    fetch("API_URL")
-      .then((res) => res.json())
-      .then((data) => {
-        setCountriesData(data);
-      });
-  }, []);
+Header should show on all pages.
 
-  return <div>{countriesData.length}</div>;
+<Outlet /> renders the child route.
+
+So:
+
+/           → Header + Home
+/contacts   → Header + Contact
+
+This solves two problems:
+
+Header remains visible on all pages.
+
+Only the child content changes.
+
+To achieve this:
+
+Move home page content into Home.jsx.
+
+Keep layout (header, navbar) inside App.jsx.
+
+Use <Outlet /> inside App.jsx.
+
+Handling Errors with errorElement
+
+We can add an errorElement to handle errors.
+
+Example:
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <Error />,
+    children: [
+      {
+        path: "/",
+        element: <Home />,
+      },
+      {
+        path: "/contacts",
+        element: <Contact />,
+      },
+    ],
+  },
+]);
+
+If:
+
+A route is invalid
+
+Something crashes
+
+A loader throws an error
+
+Then errorElement will render.
+
+Using useRouteError
+
+Inside Error.jsx:
+
+import { useRouteError } from "react-router-dom";
+
+function Error() {
+  const error = useRouteError();
+
+  return (
+    <div>
+      <h1>Something went wrong</h1>
+      <p>Status: {error.status}</p>
+    </div>
+  );
 }
 
-
-Because dependency array is empty, it runs only once.
-
-2 Run When a Variable Changes
-
-If we want the effect to run when a variable changes, we add it to the dependency array.
-
-useEffect(() => {
-  console.log("Count changed");
-}, [count]);
-
-
-Now it runs every time count changes.
-
-3️ Cleanup Function
-
-Sometimes we need to clean something when component unmounts.
-
-Example: clearing interval.
-
-useEffect(() => {
-  const interval = setInterval(() => {
-    console.log("Running...");
-  }, 1000);
-
-  return () => {
-    clearInterval(interval);
-    console.log("Cleaning up");
-  };
-}, []);
-
-
-The function inside return is called cleanup function.
-
-It runs:
-
-When component unmounts Or before effect runs again (if dependencies change)
+useRouteError() gives information about the error.
