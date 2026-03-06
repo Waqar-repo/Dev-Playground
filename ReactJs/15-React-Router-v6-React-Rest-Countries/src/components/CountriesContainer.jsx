@@ -27,14 +27,13 @@ export default function CountriesContainer({ queryProp }) {
   if(loading){
     return(
        <div className="countries-container">
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
-<Loadinghome />
+        
+{
+[...Array(8)].map((_,index)=>{
+  return <Loadinghome key={index} />
+})
+}
+
        </div>
        
     )

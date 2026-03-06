@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useSearchParams } from 'react-router';
 import LoadingCard from './LoadingCard';
+import BackButton from './BackButton';
 
 export default function CountriesDetail() {
   const [countryData, setCountryData] = useState({});
@@ -11,7 +12,7 @@ export default function CountriesDetail() {
       .then((res) => res.json())
       .then((data) => {
         setLoadingone(false)
-       
+       console.log(data[0].maps.googleMaps)
        
         setCountryData({
           name: data[0].name.common,
@@ -24,6 +25,8 @@ export default function CountriesDetail() {
           domain: data[0].tld[0],
           currencies: Object.values(data[0].currencies)[0].name,
           language: Object.values(data[0].languages)[0],
+          map:data[0].maps.googleMaps
+        
         });
       });
   }, []);
@@ -35,6 +38,8 @@ if(loadingone){
   )
 }
   return (
+    <>
+    <BackButton />
     <div className="country-container-country">
       <div className="country-img">
         <img src={countryData.flag} alt="flag" />
@@ -46,7 +51,7 @@ if(loadingone){
             <strong>Native Name:</strong> {countryData.nativeName}
           </p>
           <p>
-            <strong>Population:</strong> {countryData.population}
+            <strong>Population:</strong> {countryData.population.toLocaleString()}
           </p>
           <p>
             <strong>Region:</strong> {countryData.region}
@@ -69,14 +74,18 @@ if(loadingone){
             <strong>Languages:</strong> {countryData.language}
           </p>
           <div className="border">
-            <h4>
-              Border Countries: <span></span>
-              <span></span>
-              <span></span>
-            </h4>
+            
           </div>
         </div>
       </div>
     </div>
+<div className="map-container">
+  <iframe
+
+    src={`https://www.google.com/maps?q=${countryData.name}&output=embed`}
+  ></iframe>
+</div>
+            
+    </>
   );
 }

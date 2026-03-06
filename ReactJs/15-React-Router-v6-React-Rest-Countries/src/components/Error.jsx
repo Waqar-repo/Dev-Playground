@@ -5,6 +5,6 @@ export default function Error() {
   const error = useRouteError()
   console.log(error)
   return (
-    <h2>Opps an error has been occurred: ({error.data})</h2>
+    <h2>Opps an error has been occurred: ({error})</h2>
   )
 }
