@@ -12,7 +12,7 @@ export default function CountriesDetail() {
       .then((res) => res.json())
       .then((data) => {
         setLoadingone(false)
-       console.log(data[0].maps.googleMaps)
+       
        
         setCountryData({
           name: data[0].name.common,

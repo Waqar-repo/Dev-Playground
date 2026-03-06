@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import CountryCard from './CountryCard';
 import SearchBar from './SearchBar';
 import Loadinghome from './Loadinghome';
-export default function CountriesContainer({ queryProp }) {
+export default function CountriesContainer({ queryProp,region }) {
   const [countriesdata, setCountriesData] = useState([]);
   const [loading, setLoading] = useState(true);
   
@@ -45,10 +45,10 @@ export default function CountriesContainer({ queryProp }) {
       <div className="countries-container">
         {countriesdata
           .filter((country) =>
-            country.name.common.toLocaleLowerCase().includes(queryProp),
-          )
+            country.name.common.toLocaleLowerCase().includes(queryProp)
+          ).filter((country)=>  country.region.includes(region))
           .map((country) => {
-            // console.log(country.name.common)
+            
 
             return (
               <CountryCard

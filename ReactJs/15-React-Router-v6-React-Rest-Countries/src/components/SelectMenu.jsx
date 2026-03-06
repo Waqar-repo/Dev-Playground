@@ -1,9 +1,9 @@
 import React from 'react';
 
-function SelectMenu() {
+function SelectMenu({setRegion}) {
   return (
-    <select name="searchContainer" id="" className="filter-by-region">
-      <option value="Filter" hidden="">
+    <select name="searchContainer" id="" className="filter-by-region" onChange={(e)=> setRegion(e.target.value)}>
+      <option value="" hidden="">
         Filter By Region
       </option>
       <option className="option" value="Africa">
