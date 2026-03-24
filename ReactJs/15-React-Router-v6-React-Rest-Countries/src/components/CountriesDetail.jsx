@@ -1,17 +1,24 @@
 import React, { useEffect, useState } from 'react';
-import { useSearchParams } from 'react-router';
+import { useParams, useSearchParams } from 'react-router';
 import LoadingCard from './LoadingCard';
 import BackButton from './BackButton';
 
 export default function CountriesDetail() {
   const [countryData, setCountryData] = useState({});
   const [loadingone, setLoadingone] = useState(true);
-  const countryName = new URLSearchParams(window.location.search).get('name');
+  const [countryFound,setcountryFound] = useState(false)
+  // const countryName = new URLSearchParams(window.location.search).get('name');
+  
+  const params =  useParams()
+  const countryName = params.country
+  
   useEffect(() => {
+    
     fetch(`https://restcountries.com/v3.1/name/${countryName}?fullText=true`)
       .then((res) => res.json())
       .then((data) => {
         setLoadingone(false)
+        
        
        
         setCountryData({
@@ -21,14 +28,17 @@ export default function CountriesDetail() {
           population: data[0].population,
           region: data[0].region,
           subRegion: data[0].subregion,
-          capital: data[0].capital[0],
-          domain: data[0].tld[0],
-          currencies: Object.values(data[0].currencies)[0].name,
-          language: Object.values(data[0].languages)[0],
+          capital: data[0].capital[0] || 'N/A',
+          domain: data[0].tld[0] || '',
+          currencies: data[0].currencies ? Object.values(data[0].currencies)[0].name : 'No official currency',
+          language: data[0].languages ? Object.values(data[0].languages)[0] : 'No official language',
           map:data[0].maps.googleMaps
         
-        });
-      });
+        })
+      })
+      .catch(err =>{
+          setcountryFound(true)
+        })
   }, []);
 if(loadingone){
   return (
@@ -36,6 +46,9 @@ if(loadingone){
       <LoadingCard />
     </div>
   )
+}
+if(countryFound){
+  return <div>Something Went Wrong</div>
 }
   return (
     <>

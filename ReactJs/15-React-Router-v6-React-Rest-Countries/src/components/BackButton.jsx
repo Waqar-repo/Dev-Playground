@@ -1,13 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router'
+import React from 'react';
+import { Link } from 'react-router';
 
 export default function BackButton() {
   return (
-   <>
-   <Link to='/'>
-   <button className='BackButton'>Back</button>
-   </Link>
-   {/* <a href="/" className='BackButton'><button>Back</button></a> */}
-   </>
-  )
+    <>
+      <button onClick={() => window.history.back()} className="BackButton">
+        Back
+      </button>
+
+      {/* <a href="/" className='BackButton'><button>Back</button></a> */}
+    </>
+  );
 }

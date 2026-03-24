@@ -9,7 +9,7 @@ function CountryCard(props) {
     
     <>
     
-    <Link className="country-card" to ={`country?name=${name}`}>
+    <Link className="country-card" to ={`/${name}`}>
       <img src={flag} alt="flag" />
       <div className="card-text">
         <h3 className="card-title">{name}</h3>

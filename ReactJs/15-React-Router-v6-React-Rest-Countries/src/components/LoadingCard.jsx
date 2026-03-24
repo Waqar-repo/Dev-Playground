@@ -36,13 +36,7 @@ export default function LoadingCard() {
           <p>
             <strong>Loading ...</strong>
           </p>
-          <div className="border">
-            <h4>
-              Border Countries: <span></span>
-              <span></span>
-              <span></span>
-            </h4>
-          </div>
+         
         </div>
       </div>
     </div>
