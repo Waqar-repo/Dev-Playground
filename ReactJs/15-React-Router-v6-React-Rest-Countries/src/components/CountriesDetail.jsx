@@ -31,7 +31,7 @@ export default function CountriesDetail() {
           capital: data[0].capital[0] || 'N/A',
           domain: data[0].tld[0] || '',
           currencies: data[0].currencies ? Object.values(data[0].currencies)[0].name : 'No official currency',
-          language: data[0].languages ? Object.values(data[0].languages)[0] : 'No official language',
+          language: data[0].languages ? Object.values(data[0].languages).join(' , ') : 'No official language',
           map:data[0].maps.googleMaps
         
         })
