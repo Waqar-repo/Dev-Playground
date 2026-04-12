@@ -5,7 +5,7 @@ import SearchBar from './SearchBar';
 import Loadinghome from './Loadinghome';
 export default function CountriesContainer({ queryProp,region }) {
   const [countriesdata, setCountriesData] = useState([]);
-  const [loading, setLoading] = useState(true);
+  
   
   useEffect(() => {
     fetch(
@@ -14,7 +14,7 @@ export default function CountriesContainer({ queryProp,region }) {
       .then((res) => res.json())
       .then((data) => {
         setCountriesData(data);
-        setLoading(false)
+     
       });
 
     
@@ -24,20 +24,14 @@ export default function CountriesContainer({ queryProp,region }) {
 
   }, []);
 
-  if(loading){
-    return(
-       <div className="countries-container">
-        
-{
-[...Array(8)].map((_,index)=>{
-  return <Loadinghome key={index} />
-})
-}
+  if(countriesdata.length === 0){
+   
+return <Loadinghome  />
 
-       </div>
-       
-    )
-  }
+
+
+     
+}
 
   return (
     <>
